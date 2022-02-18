@@ -115,6 +115,23 @@ public class ScantArray {
         sa1.removeColumn(1);
         System.out.println(sa1);
 
+
+        ScantArray sa2 = new ScantArray(3,4);
+        sa2.addEntry(1,3,9);
+        sa2.addEntry(2,0,2);
+        sa2.addEntry(2,2,-3);
+        sa2.addEntry(0,1,5);
+
+        System.out.println(sa2.getValueAt(1,3));
+        System.out.println(sa2.getValueAt(3,1));
+        System.out.println(sa2.getValueAt(2,0));
+        System.out.println("rows "+ sa2.getNumRows());
+        System.out.println("columns "+ sa2.getNumColumns());
+
+        System.out.println(sa2);
+
+        sa2.removeColumn(2);
+        System.out.println(sa2);
         /******* please add one more test of your own *******/
     }
 }
